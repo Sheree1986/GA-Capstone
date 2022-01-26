@@ -1,7 +1,7 @@
 # Capstone-Project
 
 ## Open Access 
-**Possible cms build  for the information part** strench goals.
+
 The Open Access is an information management systems that will allow a user to search for information on Neurodiversity and how it is presented differently in men and women. This often lead to misdiagnosis or a diagnosis is late adulthood. Using a trivia style game The app will allow user to test their knowledge and challenge misinformation/bias on what neurodiverse signifies. 
 
 
@@ -26,14 +26,20 @@ The Open Access is an information management systems that will allow a user to s
 ### User Stories �
 * As a user I should be able to find information on the different conditions that falls under the neurodiverse umbrella.
 * Using a serach feature I should be able to look up a work to see information that contain that work generated.
-* As a user I should be able to start a triva game that genrates random question and keep a score of the session in progress.
+* As a user I should be able to start a triva game that genrates random questions and keep a score of the session in progress.
 * As a user I should be able to reset a game occurance.
 
 
 ### Bonus
 
-* As a user I shouold be able to signon to a As a user I should be able to sign on to an authorized portal 
-* The ability to access the app via a live deployment
+* As a user I shouold be able to register
+* As a user I should be able to sign on to an authorized portal. 
+* On the above portal be able to veiw my user details
+* Ability to delete my account on the portal
+* The ability to access the app via a live deployment.
+* As an admin I can complete full CRUD on triva questions and answers.
+* Possible cms build  for the information part** strench goals.
+
 
 
 #### Struggles
@@ -52,16 +58,18 @@ The Open Access is an information management systems that will allow a user to s
 
 ---
 ### ERD
+![Database ER diagram (crow's foot)](https://user-images.githubusercontent.com/87440131/151239214-2ac9c8c1-107f-4ceb-91d9-2cac32a853a2.png)
 
 ---
 ### Timeline 
 
 |      Wednesday    |      Thursday      |         Friday          |     Monday     |       Tuesday              |
 | ------------------|--------------------|-------------------------|----------------|----------------------------|
-|   Approval        |                    |                         |                |                            |
-|                   |                    |                         |                |                            |
-|                   |                    |                         |                |                            |
-|                   |                    |                         |                |                            |
+|   Approval        |  setup page        |                         |                |                            |
+|   ER              |  reouting          |                         |                |                            |
+|   Userstories     |  Start inputting   |                         |                |                            |
+|   commit angular  |    informational   |                         |                |                            |
+|                   |      data          |                         |                |                            |
 
 ---
 
