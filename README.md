@@ -2,7 +2,7 @@
 
 ## Open Access 
 
-Open Access is an information management systems that will allow a user to search 🔍 for information on Neurodiversity and how it is presented differerently in males and female. This will be a q
+The Open Access is an information management systems that will allow a user to search for information on Neurodiversity and how it is presented differently in men and women. This often lead to misdiagnosis or a diagnosis is late adulthood. Using a trivia style game The app will allow user to test their knowledge and challenge misinformation/bias on what neurodiverse signifies. 
 
 
 ### Technical requirements ⚙️
@@ -23,36 +23,38 @@ Open Access is an information management systems that will allow a user to searc
 * Installation instructions for any dependencies.
 * A link to your user stories, ERD diagrams — who are your users, what do they want, and why?
 
-### User Stories 🦄
-***
-* When searching for books - The book should display Author, Genre, Publisher, and Title
+### User Stories �
+* As a user I should be able to find information on the different conditions that falls under the neurodiverse umbrella.
+* Using a serach feature I should be able to look up a work to see information that contain that work generated.
+* As a user I should be able to start a triva game that genrates random question and keep a score of the session in progress.
+* As a user I should be able to reset a game occurance.
+
+
+### Bonus
+
+* As a user I shouold be able to signon to a As a user I should be able to sign on to an authorized portal 
+* The ability to access the app via a live deployment
+
+
+#### Struggles
+* 
+* 
+
+
+#### Approach
+
+
+#### Machineries Used
 *
-
-
-#### Struggles 🤕
-* 
-* 
-
-
-#### Approach 🚂
-The way we first came about approaching our project started off rocky- We tried to divide and conquer tasks but very soon learned that was not the best way to work for us. After our struggles with that we started to join our efforts to work on the same problems this was more efficient for us because altough it seemed like it would take more time this method allowed us both to understand the concepts better by disscusing them as we went by. We tried to divide the workload of the project amoung us into certain days as seen below for example on monday we were dedicated to setting up the Spring enviroment which we finished before the end of the day. Then after we started tuesdays workload which is where we started to fall behind on because as demonstrated below there where more objectives to be met and as said before our way of working up until the end of tuesday was still divide and conquer. Once we started working in sync we approached each day with objectives that were put in place and personally curated for our team by our squad leader to help us stay on track.
-
-#### Machineries Used 🧰
-* Service Class talks to The Controller which talks to the Repository
-* LucidCharts website to create our entity relationship models
-* Postman --> We used postman(API platform) to help us test and build our endpoints
-* PgAdmin --> we used pgadmins sources to help us interact with our databases in viewing our tables that we built
-* IntelliJ --> worked inside of intelliJ wrtitng code to create our monolithic back-end. Within intelliJ we were able to sync up to springboot in order to use tomcat to run our application.
-* Maven --> Helping to building dependencies
-* Spring Boot --> Helped us in the running of our actual project without needing an external webserver - Instead we can use an embedded web server to run it, which in our case we used Tomcat 🐱
+*
 ---
 ### Endpoints 📌
 
 ---
-### ERD 🧑‍🤝‍🧑 👭
+### ERD
 
 ---
-### Timeline ⏱️
+### Timeline 
 
 |      Wednesday    |      Thursday      |         Friday          |     Monday     |       Tuesday              |
 | ------------------|--------------------|-------------------------|----------------|----------------------------|
@@ -63,7 +65,7 @@ The way we first came about approaching our project started off rocky- We tried 
 
 ---
 
-## INSTRUCTIONS(STEP BY STEP) 🔍
+## INSTRUCTIONS(STEP BY STEP)
 ### 1. Fork & Clone this repo above 🔱
 ### 2. Open up in IntelliJ - change the application.properities and the appication.dev.properities 💻
 ### 3.  If the following dependencies are missing -  Please add the following dependencies to the pom.xml file
