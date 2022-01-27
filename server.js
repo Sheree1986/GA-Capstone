@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-app.use(express.static(__dirname + '/dist/<GA-Capstone'));
+app.use(express.static(__dirname + '/dist/<ga-capstone>'));
 app.get('/*', function(req,res) {
 res.sendFile(path.join(__dirname+
-'/dist/<GA-Capstone>/index.html'));});
+'/dist/<ga-capstone>/index.html'));});
 app.listen(process.env.PORT || 8080);
