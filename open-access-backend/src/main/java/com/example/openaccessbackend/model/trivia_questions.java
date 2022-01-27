@@ -1,4 +1,4 @@
-package model;
+package com.example.openaccessbackend.model;
 
 import  java.util.Arrays
 import javax.persistence.*;
