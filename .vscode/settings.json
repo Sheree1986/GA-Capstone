@@ -4,5 +4,6 @@
         "ng",
         "postbuild",
         "test"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
