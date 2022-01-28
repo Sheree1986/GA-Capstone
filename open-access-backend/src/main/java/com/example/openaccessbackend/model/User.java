@@ -1,67 +1,83 @@
 package com.example.openaccessbackend.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
+import java.util.List;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
-import javax.persistence.*;
-import java.util.List;
-
 @Entity
-@Table(name = "users")
+@Table(
+        name = "users"
+)
 public class User {
-
     @Id
     @Column
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(
+            strategy = GenerationType.IDENTITY
+    )
     private Long id;
-
     private String userName;
-
-    @Column(unique = true)
+    @Column(
+            unique = true
+    )
     private String emailAddress;
-
     @Column
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @JsonProperty(
+            access = Access.WRITE_ONLY
+    )
     private String password;
-
-    // one user can have only one profile
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "profile_id",referencedColumnName = "id")
+    @OneToOne(
+            cascade = {CascadeType.ALL}
+    )
+    @JoinColumn(
+            name = "profile_id",
+            referencedColumnName = "id"
+    )
     private UserProfile userProfile;
-
-    // user can have more than one recipe
-    @OneToMany(mappedBy = "user")
+    @OneToMany(
+            mappedBy = "user"
+    )
     @LazyCollection(LazyCollectionOption.FALSE)
-    private List<Recipe> recipeList;
-
-    // user can have more than one category
-    @OneToMany(mappedBy = "user")
+    private List<Answer> anwserList;
+    @OneToMany(
+            mappedBy = "user"
+    )
     @LazyCollection(LazyCollectionOption.FALSE)
-    private List<Category> categoryList;
+    private List<Question> questionList;
 
     public UserProfile getUserProfile() {
-        return userProfile;
+        return this.userProfile;
     }
 
     public void setUserProfile(UserProfile userProfile) {
         this.userProfile = userProfile;
     }
 
-    public List<Recipe> getRecipeList() {
-        return recipeList;
+    public List<Question> getQuestionList() {
+        return this.questionList;
     }
 
-    public void setRecipeList(List<Recipe> recipeList) {
-        this.recipeList = recipeList;
+    public void setQuestionList(List<Question> questionList) {
+        this.questionList = questionList;
     }
 
-    public List<Category> getCategoryList() {
-        return categoryList;
+    public List<Answer> getAnswerList() {
+        return this.answerList;
     }
 
-    public void setCategoryList(List<Category> categoryList) {
-        this.categoryList = categoryList;
+    public void setAnswerList(List<Answer> answerList) {
+        this.answerList = answerList;
     }
 
     public User() {
@@ -75,7 +91,7 @@ public class User {
     }
 
     public Long getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(Long id) {
@@ -83,7 +99,7 @@ public class User {
     }
 
     public String getUserName() {
-        return userName;
+        return this.userName;
     }
 
     public void setUserName(String userName) {
@@ -91,7 +107,7 @@ public class User {
     }
 
     public String getEmailAddress() {
-        return emailAddress;
+        return this.emailAddress;
     }
 
     public void setEmailAddress(String emailAddress) {
@@ -99,20 +115,14 @@ public class User {
     }
 
     public String getPassword() {
-        return password;
+        return this.password;
     }
 
     public void setPassword(String password) {
         this.password = password;
     }
 
-    @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", emailAddress='" + emailAddress + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        return "User{id=" + this.id + ", userName='" + this.userName + "', emailAddress='" + this.emailAddress + "', password='" + this.password + "'}";
     }
 }
