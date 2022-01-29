@@ -49,12 +49,12 @@ public class User {
             mappedBy = "user"
     )
     @LazyCollection(LazyCollectionOption.FALSE)
-    private List<Answer> anwserList;
+    private List<Question> questionList;
     @OneToMany(
             mappedBy = "user"
     )
     @LazyCollection(LazyCollectionOption.FALSE)
-    private List<Question> questionList;
+    private List<Answer> answerList;
 
     public UserProfile getUserProfile() {
         return this.userProfile;
