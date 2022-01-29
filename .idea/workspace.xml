@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c024111-fcb6-4629-bb0c-d8de7a9c79d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/controller/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/open-access-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/controller/AnswerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/model/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/model/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/model/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/model/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/model/Request/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/model/Response/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/model/UserProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/repository/AnswerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/repository/AnswerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/repository/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/repository/QuestionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/security/JWTUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/security/JwtRequestFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/security/MyUserDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/security/MyUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/security/SecurityConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/service/AnswerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-access-backend/src/main/java/com/example/openaccessbackend/service/UserService.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="24OMKwksGkFo6PM00ALdrO7hRx4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c024111-fcb6-4629-bb0c-d8de7a9c79d9" name="Changes" comment="" />
+      <created>1643497120124</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643497120124</updated>
+      <workItem from="1643497122448" duration="106000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
