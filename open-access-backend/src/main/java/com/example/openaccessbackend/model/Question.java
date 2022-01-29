@@ -1,97 +1,55 @@
 package com.example.openaccessbackend.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
+import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
-@Table(
-        name = "questions"
-)
+@Table(name = "Questions")
 public class Question {
     @Id
     @Column
-    @GeneratedValue(
-            strategy = GenerationType.IDENTITY
-    )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column
-    private String question;
-    @Column
-    private String incorrect;
-    @Column
-    private String correct;
-    @ManyToOne
-    @JoinColumn(
-            name = "user_id"
-    )
-    @JsonIgnore
-    private User user;
-    @JsonIgnore
-    @ManyToOne
-    @JoinColumn(
-            name = "answer_id"
-    )
-    private Answer answer;
 
-    public Question() {
-    }
+    @Column
+    private String text;
+
+    @OneToMany(mappedBy = "question", orphanRemoval = true)
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<Answer> answerList;
+
+
+
+
 
     public Long getId() {
-        return this.id;
+        return id;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public String getQuestion() {
-        return this.question;
+    public String getText() {
+        return text;
     }
 
-    public void setQuestion(String question) {
-        this.question = question;
+    public void setText(String text) {
+        this.text = text;
     }
 
-    public String getIncorrect() {
-        return this.incorrect;
+    public List<Answer> getAnswerList() {
+        return answerList;
     }
 
-    public void setIncorrect(String incorrect) {
-        this.incorrect = incorrect;
+    public void setAnswerList(List<Answer> answerList) {
+        this.answerList = answerList;
     }
 
-    public String getCorrect() {
-        return this.correct;
-    }
 
-    public void setCorrect(String correct) {
-        this.correct = correct;
-    }
-
-    public Answer getAnswer() {
-        return this.answer;
-    }
-
-    public void setAnswer(Answer answer) {
-        this.answer = answer;
-    }
-
-    public User getUser() {
-        return this.user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
 }
-
-
