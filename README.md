@@ -4,6 +4,7 @@
 
 The Open Access is an information management systems that will allow a user to search for information on Neurodiversity and how it is presented differently in men and women. This often lead to misdiagnosis or a diagnosis is late adulthood. Using a trivia style game The app will allow user to test their knowledge and challenge misinformation/bias on what neurodiverse signifies. 
 
+Heroku Deployment = https://open-access.herokuapp.com/
 
 ### Technical requirements ⚙️
 - [] You must create 2 apps: Everyone must build and deploy an Angular frontend that communicates with a Springboot backend API.
