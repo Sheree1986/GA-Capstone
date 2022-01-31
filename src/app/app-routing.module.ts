@@ -11,11 +11,12 @@ const routes: Routes = [
     component: QuestionsComponent
   
 },
+
+  {
+    path: 'dataset/answerList.response',
+    component: QuestionsComponent
+  },
 ];
-//   {
-//     path: 'cities',
-//     component: PhoneBookComponent
-//   },
 //   {
 //     path: '**',
 //     component: FourOhFourComponent

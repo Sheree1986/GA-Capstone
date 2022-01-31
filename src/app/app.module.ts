@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AppRoutingModule } from './app-routing.module';
 import { QuestionsComponent } from './pages/questions/questions.component';
+import { NeurodiversityComponent } from './neurodiversity/neurodiversity.component';
 
 
 
@@ -19,7 +20,8 @@ import { QuestionsComponent } from './pages/questions/questions.component';
     AppComponent,
     HomepageComponent,
     NavbarComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    NeurodiversityComponent
 
   ],
   imports: [
