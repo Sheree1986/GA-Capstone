@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AppRoutingModule } from './app-routing.module';
-import { QuestionsComponent } from './questions/questions.component';
+import { QuestionsComponent } from './pages/questions/questions.component';
 
 
 

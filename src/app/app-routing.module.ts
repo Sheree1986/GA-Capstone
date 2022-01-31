@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomepageComponent } from './pages/homepage/homepage.component';
+import { QuestionsComponent } from './pages/questions/questions.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomepageComponent
-  },
+
+    
+    // When the user goes to http://localhost:4200/cities display the cities component
+    path: 'dataset/:id',
+    component: QuestionsComponent
+  
+},
 ];
 //   {
 //     path: 'cities',
