@@ -10,7 +10,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AppRoutingModule } from './app-routing.module';
 import { QuestionsComponent } from './pages/questions/questions.component';
-import { NeurodiversityComponent } from './neurodiversity/neurodiversity.component';
+// import { NeurodiversityComponent } from './neurodiversity/neurodiversity.component';
+// import { QuizComponent } from './pages/quiz/quiz.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { ScoreComponent } from './pages/score/score.component';
+import { RouterModule } from '@angular/router';
+import { quizRoutes } from './pages/routes';
+import { QuizService } from './pages/shared/quiz.service';
 
 
 
@@ -21,7 +27,10 @@ import { NeurodiversityComponent } from './neurodiversity/neurodiversity.compone
     HomepageComponent,
     NavbarComponent,
     QuestionsComponent,
-    NeurodiversityComponent
+    // NeurodiversityComponent,
+    // QuizComponent,
+    RegisterComponent,
+    ScoreComponent
 
   ],
   imports: [
@@ -31,9 +40,10 @@ import { NeurodiversityComponent } from './neurodiversity/neurodiversity.compone
     Ng2SearchPipeModule,
     HttpClientModule,
     AppRoutingModule,
+    RouterModule.forRoot(quizRoutes),
     
   ],
-  providers: [],
+  providers: [QuizService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

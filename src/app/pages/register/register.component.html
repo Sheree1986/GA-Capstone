@@ -1,0 +1,31 @@
+
+<div class="card" style="width: 18rem;">
+    <img src="../../../assets/images/autism-infinity-symbol-1192408_1920.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">User Registration</h5>
+        <form #registration="ngForm">
+            <!-- (ngSubmit)="OnSubmit(Name.value,Email.value)" -->
+            <div class="row">
+                <div class="input=field col s12">
+                    <i class="bi bi-person-circle"></i>
+                    <input type="text" name="Name" placeholder="Name" #Name ngModel required [pattern]="emailAuth">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input=field col s12">
+                    <i class="bi bi-envelope-check-fill"></i>
+                    <input type="text" name="Email" placeholder="Email" #Email ngModel required [pattern]="emailAuth">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input=field col s12">
+                    <button class="btn-large btn-submit" type="submit">Start</button>
+                    <label></label>
+                </div>
+            </div>
+        </form>
+      
+    </div>
+  </div>
+  <!-- [disabled]="!registration.valid" -->
