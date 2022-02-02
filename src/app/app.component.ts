@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DATA } from './data';
+
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,6 @@ import { DATA } from './data';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data = DATA;
-  dataset: string = '';
+  title = 'Open Access';
 }
 

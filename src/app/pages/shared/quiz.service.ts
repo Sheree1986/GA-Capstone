@@ -1,34 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Question } from './question';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QuizService {
   // Properties localhost:9092
-moonURL = 'https://open-access-backend.herokuapp.com/api/question?';
-
-
-  constructor(private http: HttpClient) { }
-
-    // Helper Methods
-
- getQuiz() {
-   return this.http.get(`${this.moonURL}/api/questions`)
- }
- getQuestion(id: string) {
-  return this.http.get(`${this.moonURL}/api/questions/${id}`);
-}
-addNewQuestion(text: string, a: string, b: string, c: string, correct: string){
-  const quizQuestion ={
-    "text": text,
-    "a": a,
-    "b": b,
-    "c": c,       
-    "correct": correct, 
-    };
-    console.log(quizQuestion);
-    this.http.post(`${this.moonURL}/api/questions`, quizQuestion).subscribe(response=> console.log(response));
+  private moonUrl = 'https://open-access-backend.herokuapp.com/api/question/';
+// let's make the URL routes available to class 
+  
+constructor(private http: HttpClient) { }
+  
+getQuestions(): Observable<Question[]>{
+    return this.http.get<Question[]>(`${this.moonUrl}`);
   }
- 
+
 }

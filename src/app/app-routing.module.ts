@@ -16,12 +16,18 @@ const routes: Routes = [
     path: 'dataset/answerList.response',
     component: QuestionsComponent
   },
+
+//   { path: 'autism', component: . },
+// { path: 'adhd', component: LoginComponent },
+// { path: 'bipolar', component: RegisterComponent },
+
+
+{ path: '', redirectTo: 'home', pathMatch: 'full' },
+
+
 ];
-//   {
-//     path: '**',
-//     component: FourOhFourComponent
-//   }
-// ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
