@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  moonURL: 'https://open-access-backend.herokuapp.com/api/question?'
 };
 
 /*

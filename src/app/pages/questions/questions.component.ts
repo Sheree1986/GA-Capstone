@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router} from '@angular/router';
-import { DATA } from '../../data';
+import { DATA } from '../../data'
 import { HttpClient } from '@angular/common/http';
 
 @Component({

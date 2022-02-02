@@ -9,7 +9,7 @@ Heroku backend Deployment = https://open-access-backend.herokuapp.com/
 
 
 ### Technical requirements ⚙️
-- [] You must create 2 apps: Everyone must build and deploy an Angular frontend that communicates with a Springboot backend API.
+- [] You must create 2 apps: Everyone must build and deploy an Angular frontend that communicates with a Spring boot backend API.
 - [] Be a complete product.
 - [] Implement thoughtful user stories
 - [] Be deployed online We recommend Heroku or AWS.
@@ -17,7 +17,7 @@ Heroku backend Deployment = https://open-access-backend.herokuapp.com/
 ### Necessary Deliverables 🏁
 - [x] Your project idea (a brief 2-3 sentence description of your app)
 - [x] A list of your models and their properties (Having a ERD would be even better)
-- [ ] These and any other planning assets (wireframes, user stories, ERD, etc) should go inside a planning/ directory inside of your front-end project repository.        Planning and Process is one category by which we will be evaluating your project.
+- [ ] These and any other planning assets (wire frames, user stories, ERD, etc) should go inside a planning/ directory inside of your front-end project repository.        Planning and Process is one category by which we will be evaluating your project.
 - [x] A README.md file with:
 * Explanations of the machineries used.
 * A couple of paragraphs about the general approach you took.
@@ -29,19 +29,19 @@ Heroku backend Deployment = https://open-access-backend.herokuapp.com/
 ### User Stories �
 * As a user I should be able to find information on the different conditions that falls under the neurodiverse umbrella.
 * Using a serach feature I should be able to look up a work to see information that contain that work generated.
-* As a user I should be able to start a triva game that genrates random questions and keep a score of the session in progress.
-* As a user I should be able to reset a game occurance.
+* As a user I should be able to start a trivia game that genrates random questions and keep a score of the session in progress.
+* As a user I should be able to reset a game occur.
 
 
 ### Bonus
 
-* As a user I shouold be able to register
+* As a user I should be able to register
 * As a user I should be able to sign on to an authorized portal. 
-* On the above portal be able to veiw my user details
+* On the above portal be able to view my user details
 * Ability to delete my account on the portal
 * The ability to access the app via a live deployment.
-* As an admin I can complete full CRUD on triva questions and answers.
-* Possible cms build  for the information part** strench goals.
+* As an admin I can complete full CRUD on trivia questions and answers.
+* Possible cms build  for the information part** stretch goals.
 
 
 
@@ -78,7 +78,7 @@ Heroku backend Deployment = https://open-access-backend.herokuapp.com/
 
 ## INSTRUCTIONS(STEP BY STEP)
 ### 1. Fork & Clone this repo above 🔱
-### 2. Open up in IntelliJ - change the application.properities and the appication.dev.properities 💻
+### 2. Open up in IntelliJ - change the application.proper and the application.dev.properities 💻
 ### 3.  If the following dependencies are missing -  Please add the following dependencies to the pom.xml file
 
 

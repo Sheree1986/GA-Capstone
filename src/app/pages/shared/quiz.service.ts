@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class QuizService {
   // Properties localhost:9092
-moonURL = 'https://open-access-backend.herokuapp.com/';
+moonURL = 'https://open-access-backend.herokuapp.com/api/question?';
 
 
   constructor(private http: HttpClient) { }
@@ -19,13 +19,12 @@ moonURL = 'https://open-access-backend.herokuapp.com/';
  getQuestion(id: string) {
   return this.http.get(`${this.moonURL}/api/questions/${id}`);
 }
-addNewQuestion(text: string, imageTitle: string, answer1: string, answer2: string, answer3: string, correct: string){
+addNewQuestion(text: string, a: string, b: string, c: string, correct: string){
   const quizQuestion ={
     "text": text,
-    "imageTitle": imageTitle,
-    "answer1": answer1,
-    "answer2": answer2,
-    "answer3": answer3,
+    "a": a,
+    "b": b,
+    "c": c,       
     "correct": correct, 
     };
     console.log(quizQuestion);

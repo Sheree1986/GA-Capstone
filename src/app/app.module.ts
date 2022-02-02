@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -30,7 +31,8 @@ import { QuizService } from './pages/shared/quiz.service';
     // NeurodiversityComponent,
     // QuizComponent,
     RegisterComponent,
-    ScoreComponent
+    ScoreComponent,
+    
 
   ],
   imports: [

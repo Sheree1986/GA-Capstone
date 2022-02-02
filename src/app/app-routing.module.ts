@@ -7,7 +7,7 @@ const routes: Routes = [
 
     
     // When the user goes to http://localhost:4200/cities display the cities component
-    path: 'dataset/:id',
+    path: 'question',
     component: QuestionsComponent
   
 },
