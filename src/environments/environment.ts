@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  moonURL: 'https://open-access-backend.herokuapp.com/api/question?'
+  moonUrl: 'https://open-access-backend.herokuapp.com/api/question'
 };
 
 /*

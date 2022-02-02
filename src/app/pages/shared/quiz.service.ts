@@ -8,7 +8,7 @@ import { Question } from './question';
 })
 export class QuizService {
   // Properties localhost:9092
-  private moonUrl = 'https://open-access-backend.herokuapp.com/api/question/';
+  private moonUrl = "https://open-access-backend.herokuapp.com/api/question";
 // let's make the URL routes available to class 
   
 constructor(private http: HttpClient) { }
