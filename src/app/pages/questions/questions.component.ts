@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Question } from '../shared/question';
 import { QuizService } from '../shared/quiz.service';
-import { HttpClient } from '@angular/common/http';
+// import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -14,20 +14,26 @@ export class QuestionsComponent implements OnInit {
   // private moonURL = 'https://open-access-backend.herokuapp.com/api/question/';
 // let's make the URL routes available to class 
 
-  questions: Question[];
-  clickMe () {
-    this.http
-    .get(`http://localhost:9092/api/question/1`)
-    .subscribe((response) => console.log(response));
-    console.log("clickMe");
-  }
-constructor(private quizService: QuizService, private http: HttpClient) { this.questions= [];}
+  questions: any;
+  // clickMe () {
+  //   this.http
+  //   .get(`https://open-access-backend.herokuapp.com/api/question/1`)
+  //   .subscribe((response) => console.log(response));
+  //   console.log("clickMe");
+  // }
+// let's make the URL routes available to class
 
+
+constructor(private quizService: QuizService) { }
 
 ngOnInit(): void {
 
+this.quizService.getQuestions().subscribe(data => {
+this.questions = data;
+})
+}
+}
 
-// }
   // this.quizService.getQuestions().subscribe((questions: Question[]) => {
   //   this.questions = questions;
   
@@ -43,7 +49,4 @@ ngOnInit(): void {
 //   this.quizService.getQuestions().subscribe((data: Question[]) => {
 //     console.log(data);
 //     this.questions = data;
-//   });
-// }
-// }
-}}
+
