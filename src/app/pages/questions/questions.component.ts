@@ -15,6 +15,7 @@ export class QuestionsComponent implements OnInit {
 // let's make the URL routes available to class 
 
   questions: any;
+  qId: any;
   // clickMe () {
   //   this.http
   //   .get(`https://open-access-backend.herokuapp.com/api/question/1`)
@@ -28,10 +29,14 @@ constructor(private quizService: QuizService) { }
 
 ngOnInit(): void {
 
-this.quizService.getQuestions().subscribe(data => {
+this.quizService.getQuestion().subscribe(data => {
 this.questions = data;
 })
+// this.quizService.getQuestionId().subscribe(data => {
+//   this.qId = data;
+// })
 }
+
 }
 
   // this.quizService.getQuestions().subscribe((questions: Question[]) => {

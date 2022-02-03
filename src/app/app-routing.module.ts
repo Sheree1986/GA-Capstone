@@ -10,6 +10,7 @@ import { TouretteComponent } from './pages/neurodiversity/tourette/tourette.comp
 import { QuestionsComponent } from './pages/questions/questions.component';
 import { ResourcesComponent } from './pages/resources/resources.component';
 
+
 const routes: Routes = [
   {
 

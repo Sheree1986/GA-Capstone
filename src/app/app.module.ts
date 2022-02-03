@@ -11,9 +11,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AppRoutingModule } from './app-routing.module';
 import { QuestionsComponent } from './pages/questions/questions.component';
-// import { QuizComponent } from './pages/quiz/quiz.component';
-// import { RegisterComponent } from './pages/register/register.component';
-// import { ScoreComponent } from './pages/score/score.component';
 import { RouterModule } from '@angular/router';
 // import { quizRoutes } from './pages/routes';
 import { QuizService } from './pages/shared/quiz.service';
@@ -34,9 +31,6 @@ import { NeurodiversityComponent } from './pages/neurodiversity/neurodiversity.c
     HomepageComponent,
     NavbarComponent,
     QuestionsComponent,
-    // QuizComponent,
-    // RegisterComponent,
-    // ScoreComponent,
     AutismComponent,
     AdhdComponent,
     BiPolarComponent,
@@ -44,6 +38,7 @@ import { NeurodiversityComponent } from './pages/neurodiversity/neurodiversity.c
     DyslexiaComponent,
     ResourcesComponent,
     NeurodiversityComponent,
+ 
     
     
 
