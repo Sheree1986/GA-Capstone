@@ -11,13 +11,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AppRoutingModule } from './app-routing.module';
 import { QuestionsComponent } from './pages/questions/questions.component';
-// import { NeurodiversityComponent } from './neurodiversity/neurodiversity.component';
 // import { QuizComponent } from './pages/quiz/quiz.component';
-import { RegisterComponent } from './pages/register/register.component';
-import { ScoreComponent } from './pages/score/score.component';
+// import { RegisterComponent } from './pages/register/register.component';
+// import { ScoreComponent } from './pages/score/score.component';
 import { RouterModule } from '@angular/router';
-import { quizRoutes } from './pages/routes';
+// import { quizRoutes } from './pages/routes';
 import { QuizService } from './pages/shared/quiz.service';
+import { AutismComponent } from './pages/neurodiversity/autism/autism.component';
+import { AdhdComponent } from './pages/neurodiversity/adhd/adhd.component';
+import { BiPolarComponent } from './pages/neurodiversity/bi-polar/bi-polar.component';
+import { TouretteComponent } from './pages/neurodiversity/tourette/tourette.component';
+import { DyslexiaComponent } from './pages/neurodiversity/dyslexia/dyslexia.component';
+import { ResourcesComponent } from './pages/resources/resources.component';
+import { NeurodiversityComponent } from './pages/neurodiversity/neurodiversity.component';
 
 
 
@@ -28,10 +34,17 @@ import { QuizService } from './pages/shared/quiz.service';
     HomepageComponent,
     NavbarComponent,
     QuestionsComponent,
-    // NeurodiversityComponent,
     // QuizComponent,
-    RegisterComponent,
-    ScoreComponent,
+    // RegisterComponent,
+    // ScoreComponent,
+    AutismComponent,
+    AdhdComponent,
+    BiPolarComponent,
+    TouretteComponent,
+    DyslexiaComponent,
+    ResourcesComponent,
+    NeurodiversityComponent,
+    
     
 
   ],
@@ -42,7 +55,7 @@ import { QuizService } from './pages/shared/quiz.service';
     Ng2SearchPipeModule,
     HttpClientModule,
     AppRoutingModule,
-    RouterModule.forRoot(quizRoutes),
+    RouterModule,
     
   ],
   providers: [QuizService],

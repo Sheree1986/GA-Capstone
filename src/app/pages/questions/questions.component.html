@@ -1,4 +1,4 @@
-
+<router-outlet></router-outlet>
       <div class="container mt-sm-5 my-1">
         <div class="question ml-sm-5 pl-sm-5 pt-2">
             <div class="py-2 h5"><b></b></div>
@@ -11,5 +11,7 @@
         </div>
     </div>
 <p>working</p>
-<p *ngFor="let question of questions">{{questions?.a}}</p>
+<p *ngFor="let question of questions">{{question?.text}}</p>
+<p *ngFor="let question of questions">{{question?.a}}</p>
+<p></p>
 <p>Not working</p>
