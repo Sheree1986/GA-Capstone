@@ -31,8 +31,14 @@ The Open Access is an information management systems that will allow a user to f
 
 
 #### Struggles
-Spent three days tying to fix what would later be determined to be a Cors error on the back end.
+Spent three days tying to fix what would later be determined to be a Cors error on the backend. 
 
+Broken glasses
+![carousel-broken-glasses-2](https://user-images.githubusercontent.com/87440131/152588893-bf55a364-c161-47f8-94c1-33c2c09b7bed.jpeg)
+
+Broken anuglar (Stackoverflow for the win - npm cache clear --force /npm install -g @angular/cli / npm install)
+
+<img width="584" alt="Screen Shot 2022-02-04 at 2 07 11 PM" src="https://user-images.githubusercontent.com/87440131/152588935-5e74179e-d127-498f-b26b-ad7af3fac667.png">
 
 
 #### Machineries Used
