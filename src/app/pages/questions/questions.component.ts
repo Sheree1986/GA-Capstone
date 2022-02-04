@@ -21,6 +21,8 @@ public currentA: number = 0;
 public score: number=0;
 correct: number = 0;
 wrong: number = 0;
+correctAnswer: any = [];
+currentAnswer=0;
 
 
 constructor(private quizService: QuizService) { }
@@ -44,7 +46,7 @@ previousQuestion(){
   this.currentQuestion--;
 this.currentA++;
 }
-answer(currentQ:number,option:any){
+answer(current:number,option:any){
   if (option.correct) {
   this.score +=10
   this.correct ++;
@@ -62,37 +64,5 @@ restart(){
   this.currentQuestion=0;
   
 }
+
 }
-
-
-
-
-  // qId: any;
-  // clickMe () {
-  //   this.http
-  //   .get(`https://open-access-backend.herokuapp.com/api/question/1`)
-  //   .subscribe((response) => console.log(response));
-  //   console.log("clickMe");
-  // }
-// let's make the URL routes available to class
-
-
-// this.quizService.getQuestionId().subscribe(data => {
-//   this.qId = data;
-// })
- // this.quizService.getQuestions().subscribe((questions: Question[]) => {
-//   this.questions = questions;
-  
-// this.quizService.getQuestions().subscribe(data => { // this.questions =  data;
-//   })
-// }
-// }
-// questions: Question[] | undefined;
-// constructor(private quizService: QuizService) { }
-
-// ngOnInit(): void {
-//   this.quizService.getQuestions().subscribe((data: Question[]) => {
-//     console.log(data);
-//     this.questions = data;
-
-//updating read me
