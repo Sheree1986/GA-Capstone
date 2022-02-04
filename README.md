@@ -1,6 +1,6 @@
 ## Open Access 
-[Heroku Frontend](https://open-access.herokuapp.com/)
-[Heroku Backend](https://open-access-backend.herokuapp.com/)
+## [Heroku Frontend](https://open-access.herokuapp.com/)
+## Heroku Backend](https://open-access-backend.herokuapp.com/)
 
 
 The Open Access is an information management systems that will allow a user to find information on Neurodiversity and how it is presented differently in men and women. This often lead to misdiagnosis or a diagnosis is late adulthood. Using a trivia style game The app will allow user to test their knowledge and challenge misinformation/bias on what neurodiverse signifies. 
@@ -36,13 +36,13 @@ Spent three days tying to fix what would later be determined to be a Cors error 
 ---
 ### Timeline 
 
-|      Wednesday    |      Thursday      |         Friday          |     Monday     |       Tuesday              |
-| ------------------|--------------------|-------------------------|----------------|----------------------------|
-|   Approval        |  setup page        |          Working on     |                |                            |
-|   ER              |  reouting          |          endpoint       |                |                            |
-|   Userstories     |  Start inputting   |                         |                |                            |
-|   commit angular  |    informational   |                         |                |                            |
-|                   |      data          |                         |                |                            |
+|      Wednesday    |      Thursday      |   Friday/Sat/Sund  |     Monday     |   Tuesday/Wednesday/Thur   |
+| ------------------|--------------------|--------------------|----------------|----------------------------|
+|   Approval        |  setup page        |     Working on     |   Trivia       |                            |
+|   ER              |  reouting          |     endpoint       |    questions   |    Struck                  |
+|   Userstories     |  Start inputting   |     generate       |                |      Readme                |
+|   commit angular  |    informational   |      data          |                |                            |
+|                   |      data          |                    |                |                            |
 
 ---
 
