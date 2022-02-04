@@ -2,24 +2,28 @@
 
 ## Open Access 
 
-The Open Access is an information management systems that will allow a user to search for information on Neurodiversity and how it is presented differently in men and women. This often lead to misdiagnosis or a diagnosis is late adulthood. Using a trivia style game The app will allow user to test their knowledge and challenge misinformation/bias on what neurodiverse signifies. 
+The Open Access is an information management systems that will allow a user to view information on Neurodiversity and how it is presented differently in men and women. This often lead to misdiagnosis or a diagnosis is late adulthood. Using a trivia style game The app will allow user to test their knowledge and challenge misinformation/bias on what neurodiverse signifies. 
 
-Heroku Frontend Deployment = https://open-access.herokuapp.com/
-Heroku backend Deployment = https://open-access-backend.herokuapp.com/
+Heroku Frontend Deployment = [Front](https://open-access.herokuapp.com/)
+Heroku backend Deployment = [Back](https://open-access-backend.herokuapp.com/)
 
 
 ### Technical requirements ⚙️
-- [] You must create 2 apps: Everyone must build and deploy an Angular frontend that communicates with a Spring boot backend API.
-- [] Be a complete product.
-- [] Implement thoughtful user stories
-- [] Be deployed online We recommend Heroku or AWS.
+- [X] You must create 2 apps: Everyone must build and deploy an Angular frontend that communicates with a Spring boot backend API.
+- [X] Be a complete product.
+- [X] Implement thoughtful user stories
+- [X] Be deployed online We recommend Heroku or AWS.
 
 ### Necessary Deliverables 🏁
 - [x] Your project idea (a brief 2-3 sentence description of your app)
 - [x] A list of your models and their properties (Having a ERD would be even better)
-- [ ] These and any other planning assets (wire frames, user stories, ERD, etc) should go inside a planning/ directory inside of your front-end project repository.        Planning and Process is one category by which we will be evaluating your project.
-- [x] A README.md file with:
+- [x] A README.md
+
+
+
 * Explanations of the machineries used.
+
+
 * A couple of paragraphs about the general approach you took.
 * Descriptions of any unsolved problems or major hurdles you had to overcome.
 * A link to your planning documentation for how you broke down this project with deliverables and timelines.
@@ -28,7 +32,6 @@ Heroku backend Deployment = https://open-access-backend.herokuapp.com/
 
 ### User Stories �
 * As a user I should be able to find information on the different conditions that falls under the neurodiverse umbrella.
-* Using a serach feature I should be able to look up a work to see information that contain that work generated.
 * As a user I should be able to start a trivia game that genrates random questions and keep a score of the session in progress.
 * As a user I should be able to reset a game occur.
 
@@ -46,16 +49,15 @@ Heroku backend Deployment = https://open-access-backend.herokuapp.com/
 
 
 #### Struggles
-* 
-* 
+Spent three days tying to fix what would later be determined to be a Cors error on the back end.
 
 
 #### Approach
-
+Overall apporach was to get the backend up and running than deployed. Once that was completed I worked on deploying than completing the frontend. 
 
 #### Machineries Used
-*
-*
+ Angular, JavaScript, Typescript, HTML, CSS, Java, Spring Boot, Maven, PostgreSQL, PgAdmin, Postman
+
 ---
 ### Endpoints 📌
 
@@ -68,8 +70,8 @@ Heroku backend Deployment = https://open-access-backend.herokuapp.com/
 
 |      Wednesday    |      Thursday      |         Friday          |     Monday     |       Tuesday              |
 | ------------------|--------------------|-------------------------|----------------|----------------------------|
-|   Approval        |  setup page        |                         |                |                            |
-|   ER              |  reouting          |                         |                |                            |
+|   Approval        |  setup page        |          Working on     |                |                            |
+|   ER              |  reouting          |          endpoint       |                |                            |
 |   Userstories     |  Start inputting   |                         |                |                            |
 |   commit angular  |    informational   |                         |                |                            |
 |                   |      data          |                         |                |                            |
@@ -82,12 +84,11 @@ Heroku backend Deployment = https://open-access-backend.herokuapp.com/
 ### 3.  If the following dependencies are missing -  Please add the following dependencies to the pom.xml file
 
 
-### 4. Open pgAdmin, create database called "" 🐘
+### 4. Open pgAdmin, create database called "trivia" 🐘
 
 
 
-### 5. Query through the database using these statements in pgAdmin 🗃
 
 
 
-### 6. Questions & Answers :interrobang:
+
