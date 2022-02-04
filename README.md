@@ -1,6 +1,6 @@
 ## Open Access 
 ## [Heroku Frontend](https://open-access.herokuapp.com/)
-## Heroku Backend](https://open-access-backend.herokuapp.com/)
+## [Heroku Backend](https://open-access-backend.herokuapp.com/)
 
 
 The Open Access is an information management systems that will allow a user to find information on Neurodiversity and how it is presented differently in men and women. This often lead to misdiagnosis or a diagnosis is late adulthood. Using a trivia style game The app will allow user to test their knowledge and challenge misinformation/bias on what neurodiverse signifies. 
@@ -21,7 +21,7 @@ The Open Access is an information management systems that will allow a user to f
 
 ### User Stories �
 - [x] As a user I should be able to find information on the different conditions that falls under the neurodiverse umbrella.
-- [x] As a user I should be able to start a trivia game that genrates random questions and keep a score of the session in progress.
+- [x] As a user I should be able to start a trivia game that generates random questions and keep a score of the session in progress.
 - [x] As a user I should be able to reset a game occur.
 
 
