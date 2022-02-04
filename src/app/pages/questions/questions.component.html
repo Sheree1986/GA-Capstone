@@ -1,12 +1,21 @@
 <router-outlet></router-outlet>
       <div class="container mt-sm-5 my-1" >
-        <div class="question ml-sm-5 pl-sm-5 pt-2" >
-            <div class="py-2 h5" >{{questions[1].text}}<b></b></div>
-            <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options"> <label class="options">  <input type="radio" name="radio">{{questions[1].a}} <span class="checkmark"></span> </label> <label class="options"> <input type="radio" name="radio">{{questions[1].b}} <span class="checkmark"></span> </label> <label class="options"> <input type="radio" name="radio">{{questions[1].c}} <span class="checkmark"></span> </label> <label class="options"> <input type="radio" name="radio">{{questions[1].d}} <span class="checkmark"></span> </label> </div>
+    
+     <div class="question ml-sm-5 pl-sm-5 pt-2" >
+            <div class="py-2 h5" >{{questions[currentQuestion].text}}<b></b></div>
+            <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options"> <label class="options"  >  <input type="radio" name="radio">{{questions[currentQuestion].a}}<span class="checkmark"></span> </label> <label class="options"> <input type="radio" name="radio">{{questions[currentQuestion].b}} <span class="checkmark"></span> </label> <label class="options"> <input type="radio" name="radio">{{questions[currentQuestion].c}} <span class="checkmark"></span> </label> <label class="options"> <input type="radio" name="radio">{{questions[currentQuestion].d}} <span class="checkmark"></span> </label> </div>
         </div>
         <p></p>
         <div class="d-flex align-items-center pt-3">
-            <div id="prev"> <button class="btn btn-primary">Previous</button> </div>
-            <div class="ml-auto mr-sm-5"> <button class="btn btn-success">Next</button> </div>
-        </div>
+            <div id="prev"> <button [disabled]="currentQuestion===0" class="btn btn-primary" (click)="previousQuestion()">Previous</button> </div>
+            <div class="ml-auto mr-sm-5"> <button class="btn btn-success" (click)="nextQuestion()">Next</button> </div>
+
     </div>
+    <div class="text-center"><h2>{{currentQuestion+1}} of 20</h2>
+        <h4>Score: {{score}}</h4></div>
+        <div class="d-flext align-items-right pt-3" id="Restart"><button class="btn btn-success"(click)="restart()">Restart</button></div> 
+
+</div>
+
+
+<p>}</p>
