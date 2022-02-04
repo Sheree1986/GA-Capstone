@@ -24,27 +24,16 @@ The Open Access is an information management systems that will allow a user to f
 - [x] As a user I should be able to start a trivia game that generates random questions and keep a score of the session in progress.
 - [x] As a user I should be able to reset a game occur.
 
+###
+![20220204_103737](https://user-images.githubusercontent.com/87440131/152558769-ae0431bc-a418-4f31-bc86-2eefe9942250.gif)
+![20220204_103821](https://user-images.githubusercontent.com/87440131/152558776-86b5bba2-2b94-4560-88ea-17a20f666eca.gif)
+
+
 
 #### Struggles
 Spent three days tying to fix what would later be determined to be a Cors error on the back end.
 
 
----
-### ERD
-![Database ER diagram (crow's foot)](https://user-images.githubusercontent.com/87440131/151239214-2ac9c8c1-107f-4ceb-91d9-2cac32a853a2.png)
-
----
-### Timeline 
-
-|      Wednesday    |      Thursday      |   Friday/Sat/Sund  |     Monday     |   Tuesday/Wednesday/Thur   |
-| ------------------|--------------------|--------------------|----------------|----------------------------|
-|   Approval        |  setup page        |     Working on     |   Trivia       |                            |
-|   ER              |  reouting          |     endpoint       |    questions   |    Struck                  |
-|   Userstories     |  Start inputting   |     generate       |                |      Readme                |
-|   commit angular  |    informational   |      data          |                |                            |
-|                   |      data          |                    |                |                            |
-
----
 
 #### Machineries Used
  Angular, JavaScript, Typescript, HTML, CSS, Java, Spring Boot, Maven, PostgreSQL, PgAdmin, Postman
@@ -54,7 +43,7 @@ Spent three days tying to fix what would later be determined to be a Cors error 
 ### 2. Open up in IntelliJ - change the application.proper and the application.dev.properities 💻
 ### 4. Open pgAdmin, create database called "trivia" 🐘
 
-
+<img width="850" alt="Screen Shot 2022-02-04 at 10 48 27 AM" src="https://user-images.githubusercontent.com/87440131/152559290-35527ee2-0653-4818-b1e4-19dc86252f58.png">
 
 
 
